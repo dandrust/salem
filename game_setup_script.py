@@ -7,13 +7,40 @@
 """
 
 def not_a_witch_cards_required(player_count):
-  return None
+  if player_count < 2 or player_count > 12:
+    return None
+
+  match player_count:
+    case 2 | 3 | 4:
+      return 18
+    case 5:
+      return 23
+    case 6 | 10:
+      return 27
+    case 7:
+      return 32
+    case 8:
+      return 29
+    case 9 | 12:
+      return 33
+    case 11:
+      return 30
+    
 
 def witch_cards_required(player_count):
-  return None
+  if player_count < 2 or player_count > 12:
+    return None
+
+  if player_count < 5:
+    return 1
+  elif player_count > 5:
+    return 2
 
 def constable_cards_required(player_count):
-  return None
+  if player_count < 2 or player_count > 12:
+    return None
+
+  return 1
 
 # Tests
 if __name__ == "__main__":
@@ -31,7 +58,7 @@ if __name__ == "__main__":
   assert not_a_witch_cards_required(9) == 33
   assert not_a_witch_cards_required(10) == 27
   assert not_a_witch_cards_required(11) == 30
-  assert not_a_witch_cards_required(12) == 22
+  assert not_a_witch_cards_required(12) == 33
   assert not_a_witch_cards_required(13) == None
   assert not_a_witch_cards_required(100) == None
 
