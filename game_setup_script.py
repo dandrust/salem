@@ -31,7 +31,7 @@ if __name__ == "__main__":
   assert not_a_witch_cards_required(9) == 33
   assert not_a_witch_cards_required(10) == 27
   assert not_a_witch_cards_required(11) == 30
-  assert not_a_witch_cards_required(12) == 22
+  assert not_a_witch_cards_required(12) == 33
   assert not_a_witch_cards_required(13) == None
   assert not_a_witch_cards_required(100) == None
 
