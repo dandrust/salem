@@ -8,4 +8,6 @@
     instantiate with the number of players and then call some methods to get the number of cards required
 
     See `game_test.py` for the expected interface of the Game class.
+
+    Run `python3 game_test.py` to run the tests and confirm your implementation is correct.
 """
