@@ -6,4 +6,5 @@ if __name__ == "__main__":
     assert card.occupation == "Physician"
     assert card.age == 47
     assert str(card) == "Will Griggs (47), Physician"
+
     print("All tests pass!")

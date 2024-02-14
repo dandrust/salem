@@ -9,4 +9,6 @@ if __name__ == "__main__":
     player.assign_town_hall_card(card)
 
     assert player.town_hall_card == card
-    assert f"{player}" == "Kate is playing as Sarah Good (39), Beggar"
+    assert str(player) == "Kate is playing as Sarah Good (39), Beggar"
+
+    print("All tests pass!")
