@@ -13,3 +13,12 @@
 
     Run `python3 town_hall_card_test.py` to run the tests and confirm your implementation is correct.
 """
+
+class TownHallCard:
+    def __init__(self, name, occupation, age):
+        self.name = name
+        self.occupation = occupation
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} ({self.age}), {self.occupation}"
