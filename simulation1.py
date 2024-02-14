@@ -15,7 +15,36 @@
     Because this task includes a random element a test script isn't reliable, so none is provided
 """
 
-from random import shuffle
+import random
 from static_data import TOWN_HALL_CARD_DATA
+from player import Player
+from town_hall_card import TownHallCard
 
-NUM_PLAYERS: 6 # You can change this!
+NUM_PLAYERS = 3 # You can change this!
+
+# Setup Players
+player_candidates = [
+    "Dan", "Kate", "Lindsey", "Mitch", "Meredith", "Tre", "Rachel",
+    "Tommy", "Larissa", "Elaine", "Bob", "Sue", "Bruce", "Marcia", "Mickey"
+]
+
+random.shuffle(player_candidates)
+
+players = []
+
+for _ in range(NUM_PLAYERS):
+    players.append(Player(player_candidates.pop()))
+
+# Setup Town Hall cards
+town_hall_cards = []
+
+for card_data in TOWN_HALL_CARD_DATA:
+    town_hall_cards.append(TownHallCard(*card_data))
+
+random.shuffle(town_hall_cards)
+
+# "Deal" cards to players, print player information
+for player in players:
+    card = town_hall_cards.pop()
+    player.assign_town_hall_card(card)
+    print(str(player))
