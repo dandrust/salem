@@ -14,3 +14,13 @@
 
     Run `python3 player_test.py` to run the tests and confirm your implementation is correct.
 """
+
+class Player:
+    def __init__(self, name):
+        self.name = name
+    
+    def assign_town_hall_card(self, card):
+        self.town_hall_card = card
+      
+    def __str__(self):
+        return f"{self.name} is playing as {self.town_hall_card}"
