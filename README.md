@@ -3,9 +3,9 @@
 - [ ] 2. Implement TODO in `game.py`
 - [ ] 3. Implement TODO in `town_hall_card.py`
 - [ ] 4. Implement TODO in `player.py`
-- [ ] 5. Write a simulation script that shuffles town hall cards and deals them to 8 players. Print each player's string
-- [ ] 6. Use subclassing to implement Tryal cards (witch, not a witch, constable)
-- [ ] 7. Modify simulation script to shuffle tryal cards and deal them to players
+- [ ] 5. Implement TODO in `simulation1.py`
+- [ ] 6. Use subclassing to implement Tryal cards (witch, not a witch, constable), extend player class to be dealt tryal cards (position matters for tryal cards!)
+- [ ] 7. Modify simulation script to shuffle tryal cards and deal them to players. Extend player class to tell secrets and print players' secrets in your simulation script
 - [ ] 8. List practice, type checking. Refer to built-in function docs only
     - `all` to to check if a player is currently a witch
     - `any` to check if a player is currently a witch, constable
