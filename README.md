@@ -4,8 +4,9 @@
 - [ ] 3. Implement TODO in `town_hall_card.py`
 - [ ] 4. Implement TODO in `player.py`
 - [ ] 5. Implement TODO in `simulation1.py`
-- [ ] 6. Use subclassing to implement Tryal cards (witch, not a witch, constable), extend player class to be dealt tryal cards (position matters for tryal cards!)
-- [ ] 7. Modify simulation script to shuffle tryal cards and deal them to players. Extend player class to tell secrets and print players' secrets in your simulation script
+- [ ] 6. Implement TODO in `red_card.py`
+- [ ] 7. Use subclassing to implement Tryal cards (witch, not a witch, constable), extend player class to be dealt tryal cards (position matters for tryal cards and they change. choose between list or tuple)
+- [ ] 8. Modify `Game` to hold player information, create and assign town hall cards, create and shuffle tryal cards and deal them to players. Extend player class to tell secrets and print players' secrets in your simulation script. Specs should feed players to game instance and test # of witches, constable
 - [ ] 8. List practice, type checking. Refer to built-in function docs only
     - `all` to to check if a player is currently a witch
     - `any` to check if a player is currently a witch, constable
@@ -14,5 +15,4 @@
     - `map` to list town hall card names
     - `sum` to calculate combined age of characters
     - Stretch goal: calculate the sum of all ASCII character codes of the characters in play
-- [ ] 9. Use subclassing and factory methods to model red (evidence, witness, and accusation) cards
 - [ ] 10. Use subclassing to implmement blue, green, and black cards (incorporate reds, too!)
