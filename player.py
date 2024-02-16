@@ -15,9 +15,12 @@
     Run `python3 player_test.py` to run the tests and confirm your implementation is correct.
 """
 
-class Player:
+from player_task_7 import PlayerTask7 # Ignore this until you reach task 7
+
+class Player(PlayerTask7):
     def __init__(self, name):
-        self.name = name
+        super().__init__()
+        self.name = name        
     
     def assign_town_hall_card(self, card):
         self.town_hall_card = card
